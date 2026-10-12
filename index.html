@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdnanVPN - Подписка</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f5f7fa;
+            color: #1a1a2e;
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 520px;
+            width: 100%;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 28px 24px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+            margin-bottom: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 4px;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 4px;
+        }
+        .header .username {
+            font-size: 15px;
+            color: #636e72;
+            font-weight: 500;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2d3436;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section-title .icon {
+            font-size: 22px;
+        }
+        .step {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+        .step:last-child {
+            margin-bottom: 0;
+        }
+        .step-number {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            color: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 15px;
+            margin-top: 2px;
+        }
+        .step-content h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2d3436;
+            margin-bottom: 4px;
+        }
+        .step-content p {
+            font-size: 14px;
+            color: #636e72;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            width: 100%;
+            transition: all 0.25s ease;
+            box-shadow: 0 6px 20px rgba(108, 92, 231, 0.3);
+            margin-top: 8px;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(108, 92, 231, 0.4);
+        }
+        .btn:active {
+            transform: translateY(0);
+        }
+        .btn-telegram {
+            background: linear-gradient(135deg, #0088cc, #00a8e8);
+            box-shadow: 0 6px 20px rgba(0, 136, 204, 0.3);
+            margin-top: 12px;
+        }
+        .btn-telegram:hover {
+            box-shadow: 0 10px 28px rgba(0, 136, 204, 0.4);
+        }
+        .btn-route {
+            background: linear-gradient(135deg, #00b894, #00cec9);
+            box-shadow: 0 6px 20px rgba(0, 184, 148, 0.3);
+            margin-top: 8px;
+        }
+        .btn-route:hover {
+            box-shadow: 0 10px 28px rgba(0, 184, 148, 0.4);
+        }
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: #b2bec3;
+            padding: 10px 0 20px;
+        }
+        .footer a {
+            color: #6c5ce7;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .app-store-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 8px;
+            transition: opacity 0.2s;
+        }
+        .app-store-badge:hover {
+            opacity: 0.8;
+        }
+        .app-store-badge .apple-icon {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Карточка с названием и ссылкой на Telegram -->
+        <div class="card">
+            <div class="header">
+                <h1>AdnanVPN</h1>
+                <div class="username">user_312856162</div>
+            </div>
+
+            <!-- Ссылка на Telegram -->
+            <a href="https://t.me/adn_vpn" class="btn btn-telegram" target="_blank" rel="noopener noreferrer">
+                <span>✈️</span> Перейти в Telegram @adn_vpn
+            </a>
+        </div>
+
+        <!-- Карточка с установкой -->
+        <div class="card">
+            <div class="section-title">
+                <span class="icon">📲</span> Установка
+            </div>
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Установка приложения</h3>
+                    <p>Откройте страницу в App Store и установите современный клиент INCY.</p>
+                    <a href="#" class="app-store-badge" onclick="alert('Ссылка на App Store (заглушка)'); return false;">
+                        <span class="apple-icon">🍎</span> Загрузить в App Store
+                    </a>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Добавление подписки</h3>
+                    <p>Нажмите кнопку ниже — приложение INCY откроется, и подписка добавится автоматически!</p>
+                    <button class="btn" onclick="alert('Подписка добавлена! (заглушка)');">
+                        <span>➕</span> Добавить подписку
+                    </button>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Подключение и использование</h3>
+                    <p>Откройте приложение, выберите сервер из списка и включите VPN. Готово!</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Добавить Маршрут</h3>
+                    <p>Нажмите кнопку ниже — приложение INCY откроется, и маршрут добавится автоматически!</p>
+                    <button class="btn btn-route" onclick="openRoute();">
+                        <span>🛣️</span> Добавить маршрут
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Футер -->
+        <div class="footer">
+            <p>AdnanVPN &mdash; <a href="https://t.me/adn_vpn" target="_blank" rel="noopener noreferrer">@adn_vpn</a></p>
+        </div>
+    </div>
+
+    <script>
+        function openRoute() {
+            var url = "incy://routing/onadd/eyJOYW1lIjoiSW5jeSDCtyDQoNC+0YHRgdC40Y8g0Lgg0LjQs9GA0YsiLCJHbG9iYWxQcm94eSI6InRydWUiLCJSb3V0ZU9yZGVyIjoiYmxvY2stcHJveHktZGlyZWN0IiwiUmVtb3RlRE5TVHlwZSI6IkRvSCIsIlJlbW90ZUROU0RvbWFpbiI6Imh0dHBzOi8vY2xvdWRmbGFyZS1kbnMuY29tL2Rucy1xdWVyeSIsIlJlbW90ZUROU0lQIjoiMS4xLjEuMSIsIkRvbWVzdGljRE5TVHlwZSI6IkRvVSIsIkRvbWVzdGljRE5TRG9tYWluIjoiIiwiRG9tZXN0aWNETlNJUCI6Ijc3Ljg4LjguOCIsIkdlb2lwdXJsIjoiaHR0cHM6Ly9pbmN5LnRvL2dlby9iYXNlL2dlb2lwLmRhdCIsIkdlb3NpdGV1cmwiOiJodHRwczovL2luY3kudG8vZ2VvL2Jhc2UvZ2Vvc2l0ZS5kYXQiLCJMYXN0VXBkYXRlZCI6IjE3ODY4NzE1ODAiLCJEbnNIb3N0cyI6eyJjbG91ZGZsYXJlLWRucy5jb20iOiIxLjEuMS4xIn0sIkRpcmVjdFNpdGVzIjpbImdlb3NpdGU6cHJpdmF0ZSIsImdlb3NpdGU6dGxkLXJ1IiwiZ2Vvc2l0ZTpjYXRlZ29yeS1ydSIsImdlb3NpdGU6Y2F0ZWdvcnktZ292LXJ1IiwiZ2Vvc2l0ZTpjYXRlZ29yeS1iYW5rLXJ1IiwiZ2Vvc2l0ZTpjYXRlZ29yeS1lY29tbWVyY2UtcnUiLCJnZW9zaXRlOnJ1LWF2YWlsYWJsZS1vbmx5LWluc2lkZSIsImdlb3NpdGU6c3RlYW0iLCJnZW9zaXRlOmVwaWNnYW1lcyIsImdlb3NpdGU6cmlvdCIsImdlb3NpdGU6ZXNjYXBlZnJvbXRhcmtvdiIsImdlb3NpdGU6ZmFjZWl0IiwiZ2Vvc2l0ZTp0d2l0Y2giLCJnZW9zaXRlOmFwcGxlIiwiZ2Vvc2l0ZTptaWNyb3NvZnQiLCJkb21haW46aW5jeS5ib2F0cyIsImRvbWFpbjppbmN5LmltIiwiZG9tYWluOmluY3kudG8iLCJkb21haW46dG9rLnRmIiwiZG9tYWluOnRvay5yZSJdLCJEaXJlY3RJcCI6WyJnZW9pcDpwcml2YXRlIiwiZ2VvaXA6cnUiLCIxMC4wLjAuMC84IiwiMTcyLjE2LjAuMC8xMiIsIjE5Mi4xNjguMC4wLzE2IiwiMTY5LjI1NC4wLjAvMTYiLCIyMjQuMC4wLjAvNCIsIjI1NS4yNTUuMjU1LjI1NSJdLCJQcm94eVNpdGVzIjpbImdlb3NpdGU6eW91dHViZSIsImdlb3NpdGU6dGVsZWdyYW0iLCJnZW9zaXRlOmRpc2NvcmQiLCJnZW9zaXRlOmluc3RhZ3JhbSIsImdlb3NpdGU6ZmFjZWJvb2siLCJnZW9zaXRlOm9wZW5haSIsImdlb3NpdGU6Z2l0aHViIiwiZ2Vvc2l0ZTpnb29nbGUtcGxheSJdLCJQcm94eUlwIjpbXSwiQmxvY2tTaXRlcyI6WyJnZW9zaXRlOmNhdGVnb3J5LWFkcyIsImdlb3NpdGU6d2luLXNweSIsImdlb3NpdGU6Y2F0ZWdvcnktcHVibGljLXRyYWNrZXIiXSwiQmxvY2tJcCI6W10sIkRvbWFpblN0cmF0ZWd5IjoiSVBJZk5vbk1hdGNoIiwiRmFrZUROUyI6ImZhbHNlIiwiVXNlQ2h1bmtGaWxlcyI6InRydWUifQ==";
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
