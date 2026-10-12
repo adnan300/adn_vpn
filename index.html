@@ -192,6 +192,14 @@
             box-shadow: 0 4px 14px rgba(0, 210, 255, 0.5);
         }
 
+        .btn-pay {
+            background: linear-gradient(135deg, #ffb800, #ff6a00);
+            box-shadow: 0 8px 26px rgba(255, 184, 0, 0.45);
+        }
+        .btn-pay:active {
+            box-shadow: 0 4px 14px rgba(255, 184, 0, 0.5);
+        }
+
         /* Кнопка App Store */
         .app-store-badge {
             display: inline-flex;
@@ -288,6 +296,17 @@
                     <button class="btn btn-route" onclick="openRoute();">
                         <span>🛣️</span> Добавить маршрут
                     </button>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Оплатить подписку</h3>
+                    <p>Нажмите кнопку ниже, чтобы перейти на страницу оплаты.</p>
+                    <a href="https://alfaonline.org/public/mrv2/kBLafN2Xdu" class="btn btn-pay" target="_blank" rel="noopener noreferrer">
+                        <span>💳</span> Оплатить
+                    </a>
                 </div>
             </div>
         </div>
